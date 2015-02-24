@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TestPage - FormPage</title>
+</head>
+<body>
+	<form action="http://www.google.com" method="get" >
+		<h3>Welcome Wilder!</h3>
+		First Name: <input type="text" name="FirstName" value="wilder" size="15" maxlength="15" /><br>
+		Last Name: <input type="text" name="LastName" value="gonzales" size="20" maxlength="20" /><br>
+		<textarea cols="40" name="comments" rows="6">please enter your comments...</textarea><br>
+		Password:<input type="password" value="" name="mypassword" maxlength="10" size="10" /><br>
+		<input type="radio" name="title" value="mr" />Mr.<br>
+		<input type="radio" name="title" value="ms" />Ms.<br>
+		<input type="radio" name="title" value="decline" checked="checked" />decline<br>
+		
+		<fieldset style="margin: 1em; text-align: center;">
+		<legend>Select a Hero</legend>
+		<input type="radio" name="hero"  value="Ironman" onclick="displayHero(this)" /> Ironman
+		<input type="radio" name="hero"  value="Captain America" onclick="displayHero(this)" /> Captain America
+		<input type="radio" name="hero"  value="Batman" onclick="displayHero(this)" /> Batman
+		<div style="height: 1em;" />
+		</fieldset><br>
+
+		<input type="checkbox" name="checkbox1"  />Mail me more info<br>
+		<input type="checkbox" name="checkbox2" checked="checked"  />E-Mail me more info<br>
+		
+		<select name="countries">
+		   <option>Bolivia</option>
+		   <option>Spain</option>
+		   <option>England</option>
+		   <option selected="selected">France</option>
+		</select><br>
+
+		<select name="menuitems">
+		<optgroup id="opt1" label="food">
+		   <option>Hamburgers</option>
+		   <option>Hotdogs</option>
+		</optgroup>
+		<optgroup id="opt2" label="drinks">
+		   <option>Coke</option>
+		   <option>Pepsi</option>
+		   <option>Water</option>
+		</optgroup>
+		</select><br>
+		
+		<select name="computerbrands" multiple="multiple">
+		   <option value="DELL" selected="selected">DELL</option>
+		   <option value="IBM">IBM</option>
+		   <option value="HP">HP</option>
+		   <option value="Compaq">Compaq</option>
+		   <option value="Sony">Sony</option>
+		</select><br>
+
+		<!--hidden fields-->
+		<input type="hidden" name="computerType" value="DELL" />
+		<input type="hidden" name="computerOS" value="WIN2K" />
+
+		<input type="image" align="left" name="_Next" src="submitbutton.gif" /><br><br>
+		
+		<input type="reset" name="submitbutton" value="cancel" />
+		<input type="submit" name="submitbutton" value="submit" />
+	</form>
+</body>
+</html>
