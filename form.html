@@ -6,27 +6,28 @@
 </head>
 <body>
 	<form action="http://www.google.com" method="get" >
-		<h3>Welcome Wilder!</h3>
-		First Name: <input type="text" name="FirstName" value="wilder" size="15" maxlength="15" /><br>
-		Last Name: <input type="text" name="LastName" value="gonzales" size="20" maxlength="20" /><br>
-		<textarea cols="40" name="comments" rows="6">please enter your comments...</textarea><br>
+		<h3>Welcome Tester!</h3>
+		First Name: <input id="first-name" type="text" name="FirstName" value="wilder" size="15" maxlength="15" /><br>
+		Last Name: <input id="last-name" type="text" name="LastName" value="gonzales" size="20" maxlength="20" /><br>
+		<textarea class="comment-box" cols="40" name="comments" rows="6">please enter your comments...</textarea><br>
 		Password:<input type="password" value="" name="mypassword" maxlength="10" size="10" /><br>
-		<input type="radio" name="title" value="mr" />Mr.<br>
-		<input type="radio" name="title" value="ms" />Ms.<br>
-		<input type="radio" name="title" value="decline" checked="checked" />decline<br>
+		<input id="sex-0" class= "single-data rad" type="radio" name="title" value="mr" />Mr.<br>
+		<input id="sex-1" class= "single-data rad" type="radio" name="title" value="ms" />Ms.<br>
+		<input id="sex-n" class= "single-data rad" type="radio" name="title" value="decline" checked="checked" />decline<br>
 		
 		<fieldset style="margin: 1em; text-align: center;">
 		<legend>Select a Hero</legend>
-		<input type="radio" name="hero"  value="Ironman" onclick="displayHero(this)" /> Ironman
-		<input type="radio" name="hero"  value="Captain America" onclick="displayHero(this)" /> Captain America
-		<input type="radio" name="hero"  value="Batman" onclick="displayHero(this)" /> Batman
+		<input class="ironman rad" type="radio" name="hero"  value="Ironman" onclick="displayHero(this)" /> Ironman
+		<input class="cap-america rad" type="radio" name="hero"  value="Captain America" onclick="displayHero(this)" /> Captain America
+		<input class="batman rad" type="radio" name="hero"  value="Batman" onclick="displayHero(this)" /> Batman
+		<input class="wonder-woman rad" type="radio" name="hero"  value="wwoman" onclick="displayHero(this)" /> Wonder Woman
 		<div style="height: 1em;" />
 		</fieldset><br>
 
-		<input type="checkbox" name="checkbox1"  />Mail me more info<br>
-		<input type="checkbox" name="checkbox2" checked="checked"  />E-Mail me more info<br>
+		<input id="chk1" class= "single-data" type="checkbox" name="checkbox1"  />Mail me more info<br>
+		<input id="chk2" class= "single-data" type="checkbox" name="checkbox2" checked="checked"  />E-Mail me more info<br>
 		
-		<select name="countries">
+		<select name="countries" class="container">
 		   <option>Bolivia</option>
 		   <option>Spain</option>
 		   <option>England</option>
@@ -34,18 +35,18 @@
 		</select><br>
 
 		<select name="menuitems">
-		<optgroup id="opt1" label="food">
+		<optgroup id="grp1" label="food">
 		   <option>Hamburgers</option>
 		   <option>Hotdogs</option>
 		</optgroup>
-		<optgroup id="opt2" label="drinks">
+		<optgroup id="grp2" label="drinks">
 		   <option>Coke</option>
 		   <option>Pepsi</option>
 		   <option>Water</option>
 		</optgroup>
 		</select><br>
 		
-		<select name="computerbrands" multiple="multiple">
+		<select name="computerbrands" class="container" multiple="multiple">
 		   <option value="DELL" selected="selected">DELL</option>
 		   <option value="IBM">IBM</option>
 		   <option value="HP">HP</option>
